@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="fill_parent"
+tools:context=".SplashActivity"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:background="@color/colorOrange"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/splashImage"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="0.71"
+            android:gravity="center_horizontal"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_splash">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/splashText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="?android:attr/detailsElementBackground"
+            android:gravity="center_horizontal"
+            android:text="@string/app_name"
+            android:textSize="36dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="?android:attr/detailsElementBackground"
+            android:gravity="center_horizontal"
+            android:text="@string/app_description"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
